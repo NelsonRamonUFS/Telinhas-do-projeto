@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Pedidos</title>
+    <link rel="stylesheet" href="../styles/historico-pedidos.css"> <!-- Caminho ajustado -->
+</head>
+<body>
+    <header>
+        <h1>Histórico de Pedidos</h1>
+    </header>
+
+    <div class="historico-container">
+        <h2>Seus Pedidos Anteriores</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID do Pedido</th>
+                    <th>Filme</th>
+                    <th>Sessão</th>
+                    <th>Assentos</th>
+                    <th>Adicionais</th>
+                </tr>
+            </thead>
+            <tbody id="pedidos-lista">
+                <!-- Os pedidos serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+
+        <button id="voltar">Voltar</button>
+    </div>
+
+    <script src="historico-pedidos.js"></script>
+</body>
+</html>

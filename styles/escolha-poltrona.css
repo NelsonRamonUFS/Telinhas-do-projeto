@@ -1,0 +1,90 @@
+/* Estilos globais */
+body {
+    background-color: #150940;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #400FF2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #D2F25C;
+    margin: 0;
+}
+
+/* Container do cinema */
+.cinema-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.screen {
+    background-color: #30168C;
+    color: #D2F25C;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 colunas */
+    gap: 10px;
+    justify-items: center;
+    margin: 20px;
+}
+
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #09f143;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seat.selected {
+    background-color: #1F0E59;
+    color: #5e5cf2;
+}
+
+.seat.taken {
+    background-color: #FF4C4C;
+    cursor: not-allowed;
+}
+
+/* Container de botão */
+.btn-container {
+    margin: 20px;
+}
+
+#confirmar-poltrona {
+    background-color: #400FF2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmar-poltrona:disabled {
+    background-color: #888;
+}

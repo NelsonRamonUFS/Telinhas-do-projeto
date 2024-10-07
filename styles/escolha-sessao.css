@@ -1,0 +1,70 @@
+/* Estilos globais */
+body {
+    background-color: #150940;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #400FF2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #D2F25C;
+    margin: 0;
+}
+
+/* Container de seleção de sessão */
+.session-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Estilo dos cards de sessão */
+.session-card {
+    background-color: #30168C;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #D2F25C;
+    font-size: 20px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.btn-escolher-sessao {
+    background-color: #400FF2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-escolher-sessao:hover {
+    background-color: #1F0E59;
+}

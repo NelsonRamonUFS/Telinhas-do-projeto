@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Sessão</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Adicionar Sessão</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="add-session-form">
+            <label for="movie-select">Escolha o filme:</label>
+            <select id="movie-select" name="movie" required>
+                <option value="">Selecione um filme...</option>
+                <!-- As opções de filme serão preenchidas dinamicamente -->
+            </select>
+
+            <label for="session-time">Horário da Sessão:</label>
+            <input type="time" id="session-time" name="time" required>
+
+            <button type="submit">Adicionar Sessão</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add-session-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const movieId = document.getElementById('movie-select').value;
+            const sessionTime = document.getElementById('session-time').value;
+
+            // Lógica para adicionar a sessão ao backend
+            console.log('Sessão Adicionada:', { movieId, sessionTime });
+        });
+
+        // Função para preencher as opções de filmes (mock)
+        function populateMovies() {
+            const movies = [
+                { id: 1, title: 'Filme 1' },
+                { id: 2, title: 'Filme 2' },
+                { id: 3, title: 'Filme 3' },
+            ];
+
+            const movieSelect = document.getElementById('movie-select');
+            movies.forEach(movie => {
+                const option = document.createElement('option');
+                option.value = movie.id;
+                option.textContent = movie.title;
+                movieSelect.appendChild(option);
+            });
+        }
+
+        // Preenche as opções de filme ao carregar a página
+        window.onload = populateMovies;
+    </script>
+</body>
+</html>

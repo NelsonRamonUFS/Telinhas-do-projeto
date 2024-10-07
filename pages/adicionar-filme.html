@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Novo Filme</title>
+    <link rel="stylesheet" href="../styles/admin.css"> <!-- Caminho ajustado -->
+</head>
+<body>
+    <header>
+        <h1>Adicionar Novo Filme</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="add-movie-form">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="duration">Duração (min):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="genre">Gênero:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <button type="submit">Adicionar Filme</button>
+        </form>
+    </div>
+
+    <script src="../scripts/admin.js"></script> <!-- Para futuras interações com JavaScript -->
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    background-color: #150940; /* Cor de fundo */
+    color: #D2F25C; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.revisao-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #30168C; /* Cor de fundo da seção */
+    border-radius: 10px;
+}
+
+.resumo {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+button {
+    background-color: #400FF2; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #30168C; /* Cor do botão ao passar o mouse */
+}
+
+button {
+    background-color: #400FF2; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px; /* Margem para espaçamento entre os botões */
+}
+
+button:hover {
+    background-color: #30168C; /* Cor do botão ao passar o mouse */
+}
+
+button {
+    background-color: #400FF2; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px; /* Margem para espaçamento entre os botões */
+}
+
+button:hover {
+    background-color: #30168C; /* Cor do botão ao passar o mouse */
+}

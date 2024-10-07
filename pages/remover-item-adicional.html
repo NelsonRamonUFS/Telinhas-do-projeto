@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Item Adicional</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Remover Item Adicional</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="remove-item-form">
+            <label for="item-select">Escolha o item adicional para remover:</label>
+            <select id="item-select" name="item" required>
+                <option value="">Selecione um item...</option>
+                <!-- As opções de item serão preenchidas dinamicamente -->
+            </select>
+
+            <button type="submit">Remover Item</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('remove-item-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const itemId = document.getElementById('item-select').value;
+
+            // Lógica para remover o item adicional do backend
+            console.log('Item Adicional Removido:', itemId);
+        });
+
+        // Função para preencher as opções de itens (mock)
+        function populateItems() {
+            const items = [
+                { id: 1, name: 'Refrigerante', price: '5.00' },
+                { id: 2, name: 'Pipoca', price: '10.00' },
+                { id: 3, name: 'Água', price: '3.00' },
+            ];
+
+            const itemSelect = document.getElementById('item-select');
+            items.forEach(item => {
+                const option = document.createElement('option');
+                option.value = item.id;
+                option.textContent = `${item.name} - R$ ${item.price}`;
+                itemSelect.appendChild(option);
+            });
+        }
+
+        // Preenche as opções de item ao carregar a página
+        window.onload = populateItems;
+    </script>
+</body>
+</html>

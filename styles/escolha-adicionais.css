@@ -1,0 +1,71 @@
+/* Estilos globais */
+body {
+    background-color: #150940;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #400FF2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #D2F25C;
+    margin: 0;
+}
+
+/* Container de adicionais */
+.adicionais-container {
+    margin: 20px 0;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilo dos itens */
+.item {
+    margin: 15px 0;
+    background-color: #30168C;
+    border-radius: 5px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.item:hover {
+    background-color: #1F0E59;
+}
+
+/* Estilo dos checkboxes */
+.adicional {
+    margin-right: 10px;
+}
+
+/* Container de botão */
+.btn-container {
+    margin: 20px;
+}
+
+#finalizar-pedido {
+    background-color: #400FF2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#finalizar-pedido:hover {
+    background-color: #30168C;
+}

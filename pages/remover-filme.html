@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Filme</title>
+    <link rel="stylesheet" href="../styles/admin.css"> <!-- Caminho ajustado -->
+</head>
+<body>
+    <header>
+        <h1>Remover Filme</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="remove-movie-form">
+            <label for="movie-select">Escolha o filme para remover:</label>
+            <select id="movie-select" name="movie" required>
+                <option value="">Selecione um filme...</option>
+                <!-- As opções de filme serão preenchidas dinamicamente -->
+            </select>
+
+            <button type="submit">Remover Filme</button>
+        </form>
+    </div>
+
+    <script src="../scripts/admin.js"></script> <!-- Para futuras interações com JavaScript -->
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #150940; /* Cor de fundo */
+    color: #D2F25C; /* Cor do texto */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #30168C; /* Cor do cabeçalho */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.admin-container {
+    margin-top: 20px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.card {
+    background-color: #1F0E59; /* Cor dos cards */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block; /* Para exibir os cards na mesma linha */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #400FF2; /* Cor ao passar o mouse */
+}
+
+h1, h2 {
+    color: #D2F25C; /* Cor dos títulos */
+}
+
+h3 {
+    margin: 0;
+    color: #D2F25C; /* Cor do texto nos cards */
+}
+
+.form-container {
+    background-color: #1F0E59;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px; /* Largura do formulário */
+    margin: 20px auto; /* Centraliza o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #D2F25C; /* Cor do texto */
+}
+
+input, textarea {
+    width: 90%; /* Largura completa */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #30168C; /* Borda do campo */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+button {
+    background-color: #400FF2; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+button:hover {
+    background-color: #30168C; /* Cor ao passar o mouse */
+}
+
+select {
+    width: 100%; /* Largura completa */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #30168C; /* Borda do campo */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #fff; /* Cor de fundo do select */
+}
+

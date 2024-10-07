@@ -1,0 +1,66 @@
+/* Estilos globais */
+body {
+    background-color: #150940; /* Cor de fundo principal */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #30168C; /* Fundo do formulário */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #D2F25C; /* Cor dos títulos */
+    font-size: 24px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1F0E59; /* Fundo dos campos */
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #400FF2; /* Cor dos botões */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #30168C; /* Cor ao passar o mouse */
+}
+
+a {
+    color: #D2F25C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para esconder o formulário de registro inicialmente */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha do Método de Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamento.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Escolha o Método de Pagamento</h2>
+        
+        <div class="card" id="card-cartao" onclick="selectPaymentMethod('cartao')">
+            <input type="radio" id="cartao" name="pagamento" value="cartao">
+            <label for="cartao">Cartão de Crédito <span class="check-icon">✔️</span></label>
+        </div>
+
+        <div class="card" id="card-boleto" onclick="selectPaymentMethod('boleto')">
+            <input type="radio" id="boleto" name="pagamento" value="boleto">
+            <label for="boleto">Boleto Bancário <span class="check-icon">✔️</span></label>
+        </div>
+
+        <div class="card" id="card-pix" onclick="selectPaymentMethod('pix')">
+            <input type="radio" id="pix" name="pagamento" value="pix">
+            <label for="pix">Pix <span class="check-icon">✔️</span></label>
+        </div>
+
+        <div class="card" id="card-debito" onclick="selectPaymentMethod('debito')">
+            <input type="radio" id="debito" name="pagamento" value="debito">
+            <label for="debito">Cartão de Débito <span class="check-icon">✔️</span></label>
+        </div>
+
+        <button type="button" onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+    <script>
+        function selectPaymentMethod(method) {
+            // Remove a classe 'selected' de todos os cards
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.remove('selected');
+                // Desmarca o input associado
+                const input = card.querySelector('input[type="radio"]');
+                input.checked = false;
+            });
+
+            // Marca o card selecionado e o input
+            const selectedCard = document.getElementById(`card-${method}`);
+            selectedCard.classList.add('selected');
+            const input = selectedCard.querySelector('input[type="radio"]');
+            input.checked = true;
+        }
+
+        function finalizarPedido() {
+            // Aqui você pode adicionar a lógica para finalizar o pedido
+            alert('Pedido finalizado com sucesso!');
+        }
+    </script>
+</body>
+</html>
