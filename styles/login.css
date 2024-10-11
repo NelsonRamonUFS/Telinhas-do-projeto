@@ -64,3 +64,17 @@ a:hover {
 .hidden {
     display: none;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/background.jpg'); /* caminho da imagem */
+    background-size: 90% 100%;; /* ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+    margin: 30;
+    padding: 0;
+    height: 100vh; /* altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
